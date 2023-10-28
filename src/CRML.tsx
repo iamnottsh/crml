@@ -50,7 +50,7 @@ const PC = styled(Paper)(({theme}) => ({
 
 function Token({size, text}: Block) {
   return (
-    <Typography component="span" fontSize={`${Math.pow(1.125, size)}rem`}>
+    <Typography component="span" fontSize={`${Math.pow(1.125, size) * 0.875}rem`}>
       {text}
     </Typography>
   )

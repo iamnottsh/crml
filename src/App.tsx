@@ -12,17 +12,13 @@ export default function App({text}: {text: string | null}) {
       ...prefersDarkMode ? {
         primary: {main: purple.A100},
         secondary: {main: pink.A200},
-        background: {default: darken(blueGrey[900], 0.5)},
+        background: {paper: darken(blueGrey[900], 0.5)},
       } : {
         primary: {main: purple[500]},
         secondary: {main: pink[300]},
-        background: {default: lighten(blueGrey.A100, 0.5)},
+        background: {paper: lighten(blueGrey.A100, 0.5)},
       },
     },
-    typography: {
-      fontSize: 15.75,
-    },
-    spacing: 9,
   }, zhCN), [prefersDarkMode])
   return (
     <ThemeProvider theme={theme}>
