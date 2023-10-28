@@ -64,7 +64,7 @@ function Item({me, content}: Message) {
         <ListItemText
           primary={content.map((value, index) => <Token {...value} key={index}/>)}
           primaryTypographyProps={{sx: {wordBreak: 'break-all', whiteSpace: 'normal'}}}
-          sx={{m: '0.8rem'}}
+          sx={{m: '0.4rem 0.8rem'}}
         />
       </P>
     </ListItem>
